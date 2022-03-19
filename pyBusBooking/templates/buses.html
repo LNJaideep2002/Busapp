@@ -1,0 +1,41 @@
+<table>
+  <thead>
+    <tr>
+      <th>Source</th>
+      <th>Destination</th>
+      <th>Availability</th>
+      <th>BOOK</th>
+      <th>Seats Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in value %}
+    <tr>
+      <td>{{row[0]}}></td>
+      <td>{{row[1]}}></td>
+      <td>{{row[2]}}></td>
+      <button>Book Tickets</button>
+      <input type="number" />
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<!-- <html> -->
+<!-- <head>
+    <title>Buses</title>
+  </head>
+  <body>
+    <h2 style="display: inline">Source</h2>
+    <h2 style="display: inline">Destination</h2>
+    <h2 style="display: inline">Availability</h2>
+    <h2 style="display: inline">BOOK</h2>
+    <h2 style="display: inline">Seats Required</h2>
+    {% for row in value %}
+    <h3>{{row[0].source}}</h3>
+    <h3>{{row[1]}}</h3>
+    <h3>{{row[2]}}</h3>
+
+    {% endfor %}
+  </body>
+</html> -->

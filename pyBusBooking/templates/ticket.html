@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css')}}"
+    />
+  </head>
+  <body>
+    <div class="ticket">
+      <div class="tichead">
+        <p>Bus Ticket</p>
+        <img
+          src="{{ url_for('static', filename='images/busicon.svg')}}"
+          alt=""
+          class="ticicon"
+        />
+      </div>
+      <div
+        style="
+          background-color: rgb(192, 189, 189);
+          border-radius: 10px;
+          margin: 0vw 0vw 0vw 0vw;
+        "
+      >
+        <div class="ticdiv">
+          <p>Name: {{name}}</p>
+          <p>Date:10-10-2002</p>
+        </div>
+        <div class="ticdiv">
+          <p>From: {{src}}</p>
+          <p>To: {{dest}}</p>
+        </div>
+        <div class="ticdiv">
+          <p>No of Seats: 1</p>
+          <p>Price: {{price}}</p>
+        </div>
+        <form action="buses"><button class="ticbut">OK</button></form>
+      </div>
+    </div>
+  </body>
+</html>

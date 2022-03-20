@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Register</title>
+
+    <link
+      href="{{ url_for('static', filename='css/style.css')}}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="formbackimg"></div>
+    <div class="formdiv formback">
+      <form action="registerResult" method="post" class="form">
+        <div style="margin: 0vw 0vw 0vw 1.5vw">
+          <div class="forminputdiv" style="padding-top: 2vw">
+            <label class="formlabel" for="email">Email</label>
+            <input
+              class="forminput"
+              type="text"
+              placeholder="email"
+              name="email"
+            />
+          </div>
+          <div class="forminputdiv">
+            <label class="formlabel" for="password">Password</label>
+            <input
+              class="forminput"
+              type="text"
+              placeholder="password"
+              name="pass"
+            />
+          </div>
+          <div class="forminputdiv">
+            <label class="formlabel" for="Name">Name</label>
+            <input
+              class="forminput"
+              type="text"
+              placeholder="Name"
+              name="name"
+            />
+          </div>
+          <div class="regmsg">{{regmsg}}</div>
+        </div>
+        <button type="submit" class="formbut">SUBMIT</button>
+      </form>
+    </div>
+  </body>
+</html>
